@@ -1,0 +1,25 @@
+{
+  "nombre": "Blog de Negocivex",
+  "marca": "Negocivex",
+  "url": "https://blog.negocivex.com",
+  "web": "https://negocivex.com",
+  "contacto": "contacto@negocivex.com",
+  "x": "https://x.com/negocivex",
+  "autor": {
+    "nombre": "Ángel Ramos",
+    "rol": "Fundador de Negocivex",
+    "bio": "Soy Ángel, de Pamplona. Construyo Negocivex para que bares, restaurantes y cafeterías sepan qué piensan de verdad sus clientes y qué cambiar. Escribo aquí lo que aprendo por el camino."
+  },
+  "titular": {
+    "nombre": "Ángel Ramos Arlegui",
+    "nif": "21072113L",
+    "domicilio": "Plaza Felisa Munárriz 1, Pamplona (Navarra)"
+  },
+  "piloto": {
+    "abierto": true,
+    "plazas_total": 5,
+    "plazas_libres": 5,
+    "duracion": "2 meses",
+    "plan": "Inteligencia"
+  }
+}
