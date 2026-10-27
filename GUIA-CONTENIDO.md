@@ -37,10 +37,10 @@ Son 12 publicaciones por semana. Reparto:
 | Tipo | Por semana | Qué es |
 |---|---|---|
 | Consejo | 4 | Un consejo práctico y concreto para el dueño del local. |
-| Hilo | 2 | Un consejo largo en 4-7 publicaciones. Martes y jueves a las 20:37. |
+| Hilo | 2 | Un consejo largo en 4-7 publicaciones. Martes y miércoles a las 20:37. |
 | Historia | 2 | Cómo construyo Negocivex: solo hechos de `data/diario.md` o los fijos de esta guía. |
 | Piloto | 2 | Invitación al piloto, cada vez con un ángulo distinto. |
-| Blog | 2 | Un artículo nuevo del blog. |
+| Blog | 2 | El artículo nuevo del día. Lunes y jueves a las 20:37; lo programa la tarea del blog, no la semanal. |
 
 Reglas de formato:
 
@@ -49,6 +49,7 @@ Reglas de formato:
 - La primera línea tiene que funcionar sola: una frase que el dueño reconozca ("Una reseña de una estrella no se responde en caliente.").
 - No repetir un tema ya publicado en las últimas 4 semanas (mirar la cola y lo publicado en Typefully).
 - Antes de programar, revisar: líneas rojas, longitud, ortografía y tildes.
+- Los enlaces a la web llevan `?utm_source=x` al final para saber qué visitas vienen de X.
 
 ## 5. Blog: ritmo y formato
 
