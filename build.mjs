@@ -138,6 +138,8 @@ function layout({ path, title, desc, body, jsonld = [], noindex = false, og = "o
 <link rel="alternate" type="application/rss+xml" title="${esc(sitio.nombre)}" href="/rss.xml">
 <link rel="preload" href="/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 ${noindex ? '<meta name="robots" content="noindex">\n' : ""}${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join("\n")}
 </head>
 <body>
@@ -287,13 +289,14 @@ legal("aviso-legal", "Aviso legal", `
 <h2>Marcas</h2>
 <p>Los nombres y marcas de terceros pertenecen a sus titulares y se citan solo para identificarlos.</p>`);
 legal("privacidad", "Política de privacidad", `
-<p>Este blog no tiene formularios, registro de usuarios ni herramientas de analítica o publicidad, y no recoge datos personales de quienes lo visitan.</p>
+<p>Este blog no tiene formularios, registro de usuarios ni publicidad, y no guarda datos personales de quienes lo visitan.</p>
 <p>El alojamiento lo presta Vercel Inc., que como cualquier servidor web procesa datos técnicos de conexión, como la dirección IP, para servir las páginas y mantener la seguridad del servicio.</p>
+<p>Para saber cuántas visitas recibe y de dónde llegan, el blog usa Vercel Web Analytics. Cuenta visitas de forma anónima y agregada (página vista, web de procedencia, país y tipo de dispositivo), sin cookies ni ningún otro dato guardado en tu navegador y sin crear perfiles. No identifica a nadie.</p>
 <p>Si escribes a ${esc(sitio.contacto)}, por ejemplo para pedir una plaza en el piloto, tu mensaje y tu dirección se usarán solo para responderte y gestionar tu solicitud.</p>
 <p>Responsable: ${esc(sitio.titular.nombre)}. Puedes ejercer tus derechos de acceso, rectificación y supresión escribiendo a ${esc(sitio.contacto)}, y reclamar ante la Agencia Española de Protección de Datos.</p>
 <p>El uso del servicio Negocivex se rige por su propia política de privacidad, publicada en <a href="${sitio.web}">negocivex.com</a>.</p>`);
 legal("cookies", "Política de cookies", `
-<p>Este blog no utiliza cookies propias ni de terceros. Las tipografías y los estilos se sirven desde el propio dominio, sin llamadas a servicios externos.</p>
+<p>Este blog no utiliza cookies propias ni de terceros. Las tipografías y los estilos se sirven desde el propio dominio. La medición de visitas (Vercel Web Analytics) funciona sin cookies y sin guardar nada en tu navegador.</p>
 <p>Los enlaces a otras webs llevan a sitios ajenos, que tienen sus propias políticas de cookies.</p>`);
 layout({ path: "404.html", title: "Página no encontrada", desc: "Página no encontrada.", noindex: true, body: `<section class="hero"><div class="wrap narrow"><h1>Página no encontrada</h1><p class="lead">Esta dirección no existe o ha cambiado.</p><p><a class="btn btn-light" href="/">Volver al blog</a></p></div></section>` });
 
