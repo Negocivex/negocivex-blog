@@ -25,22 +25,27 @@ La leen las tareas programadas antes de escribir nada. Si algo de aquí choca co
 5. Nada de datos de clientes reales ni de pilotos sin permiso escrito de Ángel en `data/diario.md`.
 6. Las normas de Google se citan como dice Google, con enlace a su página oficial.
 
-## 4. X (Twitter): ritmo y huecos
+## 4. X y Threads: ritmo y huecos
 
 Cola de Typefully, hora de Madrid:
 
-- Lunes a viernes: 09:12 y 20:37.
-- Sábado y domingo: 11:24.
+- Lunes a viernes: 09:12, 14:07 y 20:37.
+- Sábado y domingo: 11:24 y 19:24.
 
-Son 12 publicaciones por semana. Reparto:
+Son 19 publicaciones por semana. Lunes y jueves a las 20:37 son del blog (las programa la tarea del blog); las otras 17 las prepara la tarea semanal.
 
-| Tipo | Por semana | Qué es |
-|---|---|---|
-| Consejo | 4 | Un consejo práctico y concreto para el dueño del local. |
-| Hilo | 2 | Un consejo largo en 4-7 publicaciones. Martes y miércoles a las 20:37. |
-| Historia | 2 | Cómo construyo Negocivex: solo hechos de `data/diario.md` o los fijos de esta guía. |
-| Piloto | 2 | Invitación al piloto, cada vez con un ángulo distinto. |
-| Blog | 2 | El artículo nuevo del día. Lunes y jueves a las 20:37; lo programa la tarea del blog, no la semanal. |
+| Hueco | Qué va |
+|---|---|
+| Lunes a viernes 09:12 | Consejo práctico para el dueño del local. |
+| Lunes a viernes 14:07 | Alternando: historia (2), piloto (2) y una pregunta al público (1), por ejemplo "¿Qué queja de tus clientes te cuesta más escuchar?". |
+| Martes, miércoles y viernes 20:37 | Hilo: un consejo largo en 4-7 publicaciones. |
+| Lunes y jueves 20:37 | El artículo nuevo del blog (tarea del blog). |
+| Sábado y domingo 11:24 | Consejo. |
+| Sábado 19:24 | Historia. Domingo 19:24: piloto. |
+
+Historia: solo hechos de `data/diario.md` o los fijos de esta guía. Piloto: cada vez con un ángulo distinto.
+
+**Threads:** si la cuenta de Threads está conectada en Typefully (aparece en el social set), cada publicación sale también allí con el mismo texto. En Threads el enlace puede ir en la primera publicación y lleva `?utm_source=threads` en vez de `?utm_source=x`.
 
 Reglas de formato:
 
