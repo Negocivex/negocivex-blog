@@ -264,7 +264,7 @@ pages.push(["piloto/", hoy]);
 
 // ---------- Sobre mí ----------
 layout({
-  path: "sobre/", title: "Sobre mí", desc: `Quién escribe este blog: ${sitio.autor.nombre}, ${sitio.autor.rol.toLowerCase()}, desde Pamplona.`,
+  path: "sobre/", title: "Sobre mí", desc: `Quién escribe este blog: ${sitio.autor.nombre}, ${(sitio.autor.rol[0].toLowerCase() + sitio.autor.rol.slice(1))}, desde Pamplona.`,
   jsonld: [{ "@context": "https://schema.org", "@type": "ProfilePage", mainEntity: { ...persona, worksFor: organizacion, homeLocation: { "@type": "Place", name: "Pamplona, España" } } }, migas([["Sobre mí", "sobre/"]])],
   body: `<section class="wrap narrow prose about">
 <h1>Sobre mí</h1>
@@ -302,6 +302,6 @@ const rfc = (iso) => new Date(`${iso}T08:00:00Z`).toUTCString();
 writeFileSync(join(OUT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${abs("sitemap.xml")}\n`);
 writeFileSync(join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(([p, d]) => `<url><loc>${abs(p)}</loc><lastmod>${d}</lastmod></url>`).join("\n")}\n</urlset>\n`);
 writeFileSync(join(OUT, "rss.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n<title>${esc(sitio.nombre)}</title>\n<link>${abs()}</link>\n<atom:link href="${abs("rss.xml")}" rel="self" type="application/rss+xml"/>\n<description>Guías prácticas para bares, restaurantes y cafeterías sobre reseñas, quejas y clientes.</description>\n<language>es</language>\n${posts.map((p) => `<item><title>${esc(p.titulo)}</title><link>${abs(`${p.slug}/`)}</link><guid>${abs(`${p.slug}/`)}</guid><pubDate>${rfc(p.fecha)}</pubDate><description>${esc(p.descripcion)}</description></item>`).join("\n")}\n</channel></rss>\n`);
-writeFileSync(join(OUT, "llms.txt"), `# ${sitio.nombre}\n\n> Guías prácticas en español para bares, restaurantes y cafeterías sobre reseñas de Google, quejas de clientes y cómo conseguir que vuelvan. Lo escribe ${sitio.autor.nombre}, ${sitio.autor.rol.toLowerCase()} (${sitio.web}).\n\n## Artículos\n\n${posts.map((p) => `- [${p.titulo}](${abs(`${p.slug}/`)}): ${p.descripcion}`).join("\n")}\n\n## Negocivex\n\n- [Piloto gratuito](${abs("piloto/")}): ${plazasTexto.toLowerCase()} para probar Negocivex gratis durante ${piloto.duracion}.\n- [Sobre el autor](${abs("sobre/")})\n`);
+writeFileSync(join(OUT, "llms.txt"), `# ${sitio.nombre}\n\n> Guías prácticas en español para bares, restaurantes y cafeterías sobre reseñas de Google, quejas de clientes y cómo conseguir que vuelvan. Lo escribe ${sitio.autor.nombre}, ${(sitio.autor.rol[0].toLowerCase() + sitio.autor.rol.slice(1))} (${sitio.web}).\n\n## Artículos\n\n${posts.map((p) => `- [${p.titulo}](${abs(`${p.slug}/`)}): ${p.descripcion}`).join("\n")}\n\n## Negocivex\n\n- [Piloto gratuito](${abs("piloto/")}): ${plazasTexto.toLowerCase()} para probar Negocivex gratis durante ${piloto.duracion}.\n- [Sobre el autor](${abs("sobre/")})\n`);
 
 console.log(`Blog: ${posts.length} artículos publicados, ${todos.length - posts.length} pendientes (borrador o con fecha futura), ${pages.length} páginas en el sitemap.`);
