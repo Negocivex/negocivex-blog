@@ -25,36 +25,36 @@ La leen las tareas programadas antes de escribir nada. Si algo de aquí choca co
 5. Nada de datos de clientes reales ni de pilotos sin permiso escrito de Ángel en `data/diario.md`.
 6. Las normas de Google se citan como dice Google, con enlace a su página oficial.
 
-## 4. X y Threads: ritmo y huecos
+## 4. Threads y X: ritmo y huecos
+
+Desde el 3 nov 2026 el peso está en Threads, con una publicación al día. X queda en mínimos: solo comparte los artículos del blog. Lo que hace crecer la cuenta es que Ángel conteste y comente a mano cada día (rutina de 5 minutos); las publicaciones solo tienen que darle de qué hablar.
 
 Cola de Typefully, hora de Madrid:
 
-- Lunes a viernes: 09:12, 14:07 y 20:37.
-- Sábado y domingo: 11:24 y 19:24.
+| Hueco | Dónde | Qué va |
+|---|---|---|
+| Lunes 09:12 | Threads | Consejo práctico para el dueño del local. |
+| Martes 09:12 | Threads | Hilo: un consejo largo en 3-5 publicaciones. |
+| Miércoles 09:12 | Threads | Pregunta al público, por ejemplo "¿Qué queja de tus clientes te cuesta más escuchar?". |
+| Jueves 09:12 | Threads | Consejo. |
+| Viernes 09:12 | Threads | Piloto, cada vez con un ángulo distinto. |
+| Sábado 11:24 | Threads | Historia. |
+| Domingo 11:24 | Threads | Consejo. |
+| Lunes y jueves 20:37 | X y Threads | El artículo nuevo del blog (lo programa la tarea del blog). |
 
-Son 19 publicaciones por semana. Lunes y jueves a las 20:37 son del blog (las programa la tarea del blog); las otras 17 las prepara la tarea semanal.
-
-| Hueco | Qué va |
-|---|---|
-| Lunes a viernes 09:12 | Consejo práctico para el dueño del local. |
-| Lunes a viernes 14:07 | Alternando: historia (2), piloto (2) y una pregunta al público (1), por ejemplo "¿Qué queja de tus clientes te cuesta más escuchar?". |
-| Martes, miércoles y viernes 20:37 | Hilo: un consejo largo en 4-7 publicaciones. |
-| Lunes y jueves 20:37 | El artículo nuevo del blog (tarea del blog). |
-| Sábado y domingo 11:24 | Consejo. |
-| Sábado 19:24 | Historia. Domingo 19:24: piloto. |
+Son 7 publicaciones a la semana de la tarea semanal, todas solo en Threads (X desactivado), más las 2 del blog.
 
 Historia: solo hechos de `data/diario.md` o los fijos de esta guía. Piloto: cada vez con un ángulo distinto.
 
-**Threads:** si la cuenta de Threads está conectada en Typefully (aparece en el social set), cada publicación sale también allí con el mismo texto. En Threads el enlace puede ir en la primera publicación y lleva `?utm_source=threads` en vez de `?utm_source=x`.
-
 Reglas de formato:
 
-- Cada publicación ≤ 280 caracteres (los emojis cuentan 2). Máximo un emoji por publicación y casi nunca hashtags.
-- **Nunca un enlace en la primera publicación.** El enlace va en la segunda publicación del hilo ("Te lo cuento aquí: …"). Para el piloto, el enlace es `https://blog.negocivex.com/piloto/`.
+- En Threads, cada publicación hasta 500 caracteres, pero mejor cortas: 2-4 frases. En X (solo el blog), hasta 280 caracteres (los emojis cuentan 2).
+- Máximo un emoji por publicación y casi nunca hashtags.
+- Casi nunca enlaces: el enlace del piloto ya está en el perfil. Si hace falta uno, va en la segunda publicación del hilo y lleva `?utm_source=threads` (o `?utm_source=x` en X).
 - La primera línea tiene que funcionar sola: una frase que el dueño reconozca ("Una reseña de una estrella no se responde en caliente.").
+- Que inviten a contestar: muchas terminan con una pregunta sencilla.
 - No repetir un tema ya publicado en las últimas 4 semanas (mirar la cola y lo publicado en Typefully).
 - Antes de programar, revisar: líneas rojas, longitud, ortografía y tildes.
-- Los enlaces a la web llevan `?utm_source=x` al final para saber qué visitas vienen de X.
 
 ## 5. Blog: ritmo y formato
 
