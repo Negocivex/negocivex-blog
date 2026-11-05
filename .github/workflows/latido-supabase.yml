@@ -1,0 +1,24 @@
+# Mantiene despierta la base de datos de Negocivex (Supabase, plan gratis).
+# Supabase pausa los proyectos gratis tras una semana sin actividad; esta tarea
+# llama cada 3 días a la función public.latido(), que solo devuelve 1 y no lee
+# ni toca ningún dato. La clave pública (anon) está en el secreto SUPABASE_ANON_KEY.
+name: Latido de Supabase
+
+on:
+  schedule:
+    - cron: "17 6 */3 * *"
+  workflow_dispatch:
+
+jobs:
+  latido:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Llamar a latido()
+        env:
+          CLAVE: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          curl -fsS --retry 3 --retry-delay 30 -X POST \
+            "https://syjbhflrixqtmsrjnakl.supabase.co/rest/v1/rpc/latido" \
+            -H "apikey: $CLAVE" \
+            -H "Content-Type: application/json" \
+            -d '{}'
