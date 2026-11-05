@@ -86,7 +86,7 @@ Siguientes (en este orden salvo que haya algo más oportuno):
 
 1. ~~Por qué los clientes no vuelven a un restaurante (y cómo saberlo)~~
 2. ~~Qué hacer cuando un cliente se queja en el local~~
-3. Cómo encontrar y compartir tu enlace de reseñas de Google
+3. ~~Cómo encontrar y compartir tu enlace de reseñas de Google~~
 4. Cómo responder a las reseñas positivas sin sonar a robot
 5. Cómo usar un QR para pedir opiniones sin agobiar al cliente
 6. Qué hacer si recibes muchas reseñas negativas de golpe
