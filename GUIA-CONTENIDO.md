@@ -14,7 +14,7 @@ La leen las tareas programadas antes de escribir nada. Si algo de aquí choca co
 - Google te dice qué nota tienes; Negocivex te dice por qué.
 - En Pamplona puedo ir en persona; fuera, lo montamos por videollamada. Funciona en cualquier sitio.
 - No hace falta saber de tecnología: yo te doy las pautas.
-- Piloto gratuito: 5 plazas, 2 meses, sin tarjeta y sin compromiso. Las plazas libres salen SIEMPRE de `data/sitio.json` (`piloto.plazas_libres`). Si es 0, se habla de "lista de espera".
+- Piloto gratuito: 5 plazas, 2 meses, sin tarjeta y sin compromiso. Las plazas libres salen SIEMPRE de `data/sitio.json` (`piloto.plazas_libres`). Si es 0, se habla de "lista de espera". Si `piloto.abierto` es false, el piloto está EN PAUSA: solo se invita a apuntarse a la lista de espera; nunca se dice que las plazas estén completas ni se pide "una plaza".
 
 ## 3. Líneas rojas (no se cruzan nunca)
 

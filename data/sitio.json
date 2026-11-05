@@ -16,7 +16,7 @@
     "domicilio": "Plaza Felisa Munárriz 1, Pamplona (Navarra)"
   },
   "piloto": {
-    "abierto": true,
+    "abierto": false,
     "plazas_total": 5,
     "plazas_libres": 5,
     "duracion": "2 meses",

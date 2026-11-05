@@ -103,12 +103,13 @@ const ICONO = `<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 0h18a4 4 
 const piloto = sitio.piloto;
 const hayPlazas = piloto.abierto && piloto.plazas_libres > 0;
 const MAILTO = `mailto:${sitio.contacto}?subject=${encodeURIComponent(hayPlazas ? "Quiero una plaza en el piloto" : "Apúntame a la lista de espera del piloto")}&body=${encodeURIComponent("Hola, Ángel:\n\nMe interesa el piloto de Negocivex.\n\nNombre del negocio:\nTipo (bar, restaurante, cafetería…):\nCiudad y país:\nTeléfono (opcional):\n")}`;
-const plazasTexto = hayPlazas ? `Quedan ${piloto.plazas_libres} de ${piloto.plazas_total} plazas` : "Plazas completas: lista de espera abierta";
+const busco = piloto.abierto ? "Busco" : "Cuando reabra el piloto, buscaré";
+const plazasTexto = hayPlazas ? `Quedan ${piloto.plazas_libres} de ${piloto.plazas_total} plazas` : !piloto.abierto ? "Piloto en pausa: lista de espera abierta" : "Plazas completas: lista de espera abierta";
 
 const cta = () => `<aside class="cta">
 <p class="cta-tag"><span class="dot"></span>Piloto gratuito · ${esc(piloto.duracion)}</p>
 <h2>¿Quieres saber qué piensan de verdad tus clientes?</h2>
-<p>Busco ${piloto.plazas_total} bares, restaurantes o cafeterías para probar Negocivex gratis durante ${esc(piloto.duracion)}. Da igual dónde estés: yo te guío paso a paso. ${esc(plazasTexto)}.</p>
+<p>${busco} ${piloto.plazas_total} bares, restaurantes o cafeterías para probar Negocivex gratis durante ${esc(piloto.duracion)}. Da igual dónde estés: yo te guío paso a paso. ${esc(plazasTexto)}.</p>
 <p><a class="btn" href="/piloto/">Ver el piloto</a></p>
 </aside>`;
 
@@ -232,7 +233,7 @@ layout({
   body: `<section class="hero"><div class="wrap narrow">
 <p class="kicker"><span class="dot"></span>${esc(plazasTexto)}</p>
 <h1>Prueba Negocivex gratis durante ${esc(piloto.duracion)}</h1>
-<p class="lead">Busco ${piloto.plazas_total} bares, restaurantes o cafeterías que quieran saber qué piensan de verdad sus clientes y qué cambiar. Sin tarjeta y sin compromiso.</p>
+<p class="lead">${busco} ${piloto.plazas_total} bares, restaurantes o cafeterías que quieran saber qué piensan de verdad sus clientes y qué cambiar. Sin tarjeta y sin compromiso.</p>
 <p><a class="btn btn-light" href="${MAILTO}">${hayPlazas ? "Quiero una plaza" : "Apuntarme a la lista de espera"}</a></p>
 </div></section>
 <section class="wrap narrow prose">
