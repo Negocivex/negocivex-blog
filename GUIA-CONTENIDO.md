@@ -88,7 +88,7 @@ Siguientes (en este orden salvo que haya algo más oportuno):
 2. ~~Qué hacer cuando un cliente se queja en el local~~
 3. ~~Cómo encontrar y compartir tu enlace de reseñas de Google~~
 4. ~~Cómo responder a las reseñas positivas sin sonar a robot~~
-5. Cómo usar un QR para pedir opiniones sin agobiar al cliente
+5. ~~Cómo usar un QR para pedir opiniones sin agobiar al cliente~~
 6. Qué hacer si recibes muchas reseñas negativas de golpe
 7. Cómo leer tus reseñas de Google en 10 minutos y sacar 3 mejoras
 8. Cuando te dicen que eres caro: cómo responder y qué revisar
