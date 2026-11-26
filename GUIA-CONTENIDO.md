@@ -92,7 +92,7 @@ Siguientes (en este orden salvo que haya algo más oportuno):
 6. ~~Qué hacer si recibes muchas reseñas negativas de golpe~~
 7. ~~Cómo leer tus reseñas de Google en 10 minutos y sacar 3 mejoras~~
 8. ~~Cuando te dicen que eres caro: cómo responder y qué revisar~~
-9. Cómo preparar a tu equipo para recibir una queja
+9. ~~Cómo preparar a tu equipo para recibir una queja~~
 10. Cómo saber si un cambio en tu local ha funcionado
 11. Reseñas falsas: cómo detectarlas y qué hacer
 12. Cómo recuperar a un cliente que se fue descontento
